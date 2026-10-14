@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <h1>Cart Quantity</h1>
+
+    <button onclick="console.log(`CartQuality =${CartQuality}`)">Cart Quality</button>
+     <button onclick=" CartQuality = CartQuality+1; console.log(`CartQuality =${CartQuality}`)";>Add to Cart</button>
+    <!-- <button onclick=" CartQuality = CartQuality+1; console.log(CartQuality)";>Add to Cart</button> -->
+    <button onclick=" CartQuality = CartQuality+2; console.log(`CartQuality =${CartQuality}`)";>+2</button>
+    <button onclick=" CartQuality = CartQuality+3; console.log(`CartQuality =${CartQuality}`)";>+3</button>
+    <button onclick=" CartQuality = 0;console.log('Cart was reset'); console.log(`CartQuality =${CartQuality}`);">Reset Cart</button>
+
+    <script>
+      let CartQuality = 0;
+    //   CartQuality = CartQuality+1;
+
+
+
+    </script>
+</body>
+</html>
