@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>Rock Paper Scissors with functions</h1>
+
+  <button onclick="
+      const comresult = computerpick()
+
+          let result = '';
+          if(comresult==='rock'){
+            
+            result='tie'
+          }
+          if(comresult==='paper'){
+            
+            result='You Lose'
+          }
+          if(comresult==='scissor'){
+            
+            result='You Win'
+          }
+
+          alert(`your move:Rock ,Computer pick :${comresult}, result: ${result}`)
+
+
+
+    ">Rock</button>
+  <button onclick="
+        const comresult = computerpick()
+        let result = '';
+        if(comresult==='paper'){
+          
+          result='tie'
+        }
+         if(comresult==='scissor'){
+          
+          result='You Lose'
+        }
+         if(comresult==='rock'){
+          
+          result='You Win'
+        }
+
+        alert(`your move:Paper ,Computer pick :${comresult}, result: ${result}`)
+    ">Paper</button>
+  <button onclick="
+
+        const comresult = computerpick()
+
+        let result = '';
+        if(comresult==='scissors'){
+          
+          result='tie'
+        }
+         if(comresult==='rock'){
+          
+          result='You Lose'
+        }
+         if(comresult==='paper'){
+          
+          result='You Win'
+        }
+
+        alert(`your move:Scissors ,Computer pick :${comresult}, result: ${result}`)
+    ">Scissors</button>
+
+  <script>
+
+    function computerpick() {
+      let random = Math.random();
+      let comresult = '';
+      if (random <= 0.3) {
+        comresult = 'rock'
+
+      }
+      if (random > 0.3 && random <= 0.6) {
+        comresult = 'paper'
+
+      }
+      if (random > 0.6 && random <= 1) {
+        comresult = 'scissor'
+
+      }
+      return comresult;
+    }
+
+    function comresult(){
+      
+    }
+
+  </script>
+</body>
+
+</html>

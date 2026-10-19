@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Rock Paper Scissors</h1>
+
+    <button onclick="
+       let random = Math.random();
+       let comresult='';
+        if(random <= 0.3){
+          comresult = 'rock'
+       
+        }
+         if(random > 0.3 && random <= 0.6){
+           comresult = 'paper'
+          
+        }
+         if(random > 0.6 && random <= 1){
+          comresult = 'scissor'
+       
+        }
+
+
+        let result = '';
+        if(comresult==='rock'){
+          
+          result='tie'
+        }
+         if(comresult==='paper'){
+          
+          result='You Lose'
+        }
+         if(comresult==='scissor'){
+          
+          result='You Win'
+        }
+
+        alert(`your move:Rock ,Computer pick :${comresult}, result: ${result}`)
+
+
+
+    ">Rock</button>
+    <button onclick="">Paper</button>
+    <button onclick="">Scissors</button>
+
+    <script>
+ 
+    </script>
+</body>
+</html>

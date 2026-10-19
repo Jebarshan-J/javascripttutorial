@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //    let name = prompt("Enter your name");
+        //    let con = confirm(`Is this your name ${name}?`);
+        //    console.log(name);
+        //    console.log(con);
+
+        let year = 2024;
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    console.log(`${year} is a leap year`)
+                } else {
+                    console.log(`${year} is not a leap year`)
+                }
+            } else {
+                console.log(`${year} is a leap year`)
+            }
+        }
+        else {
+            console.log(`${year} is not a leap year`)
+        }
+
+
+    </script>
+</body>
+
+</html>
